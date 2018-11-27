@@ -61,6 +61,29 @@
     color: #76FF03;
   }
 
+  .nav {
+    padding: 8vh 0 0 5vw;
+    font-size: .9vw;
+  }
+
+  .nav__link,
+  .nav__link:visited {
+    color: #cb3f20;
+    text-decoration: none;
+  }
+
+  .nav__link:hover {
+    text-decoration: underline;
+  }
+
+  .nav__link--disabled:hover {
+    text-decoration: none;
+  }
+
+  .nav__sep {
+    color: #999;
+  }
+
   .u__underlined {
     text-decoration: underline;
   }
@@ -114,5 +137,15 @@
       </p>
     </section>
   </article>
+  <nav class="nav">
+    <span class="nav__info u__underlined">ongoing projects:</span>
+    <a class="nav__link" href="https://github.com/b4fun/pp" title="Coming soon...">
+      pp - a crawler service
+    </a>
+    <span class="nav__sep">/</span>
+    <a class="nav__link nav__link--disabled" href="#" title="Coming soon...">
+      m - 微信小程序懒人开发包
+    </a>
+  </nav>
 </body>
 </html>
