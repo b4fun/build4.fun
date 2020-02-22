@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What's going on in @b4fun? 😎</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#cb3f20">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#cb3f20">
+  <link rel="stylesheet" href="https://unpkg.com/nanoreset/nanoreset.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+  <style>
+  .brand {
+    color: #cb3f20;
+  }
+
+  body {
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Microsoft Yahei","WenQuanYi Micro Hei",Arial,Verdana,sans-serif;
+  }
+
+  .project {
+    margin-top: 5vh;
+    margin-left: 5vw;
+  }
+
+  .project-header {
+    margin-bottom: 5vh;
+  }
+
+  .project__large-text {
+    color: #212121;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    font-family: 'Lilita One', cursive;
+    margin-bottom: 1vh;
+  }
+
+  .project-list {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+  }
+
+  .project-list h2 {
+    color: #212121;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Lilita One', cursive;
+    margin-bottom: 2vh;
+  }
+
+  .project-list__item {
+    font-size: 24px;
+    list-style: disc;
+    margin-left: 24px;
+  }
+
+  .project-list__item a {
+    text-decoration: none;
+    color: #cb3f20;
+  }
+
+  .project-name {
+    display: inline-block;
+    color: #cb3f20 !important;
+    background-color: rgba(203, 63, 32, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+
+  .project-name:hover {
+    color: #fff !important;
+    background-color: rgba(203, 63, 32, 1);
+    transition: color 300ms ease;
+    transition: background-color 300ms ease;
+  }
+
+  .u__underlined {
+    text-decoration: underline !important;
+  }
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127805299-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127805299-1');
+  </script>
+</head>
+<body>
+  <article class="project">
+    <section class="project-header">
+      <p class="project__large-text">
+        <a class="brand" href="/">@b4fun</a> is building... <span class="u__underlined">software oriented services</span> & <span class="u__underlined">libraries</span>!
+      </p>
+      <p class="project__large-text">
+        Here is the list of the projects happen inside the company:
+      </p>
+    </section>
+    <section class="project-list">
+      <h2 class="u__underlined">Actively Maintained</h2>
+      <ul>
+        <li class="project-list__item">
+          <p>
+            <a class="project-name" href="https://snippet.build4.fun" target="_blank">snippet</a> is a place for sharing cool & useful code snippets from my daily work.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="project-list">
+      <h2 class="u__underlined">Under Development</h2>
+      <ul>
+        <li class="project-list__item">
+          <p>
+            <a class="project-name" href="https://github.com/b4fun/frpcontroller" target="_blank">frpcontroller</a> is a Kubernetes controller for managing <a href="https://github.com/fatedier/frp">frp</a> endpoints & services.
+          </p>
+        </li>
+      </ul>
+    </section>
+  </article>
+</body>
