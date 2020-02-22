@@ -51,6 +51,12 @@
 
   .hire__status p {
     font-size: 1.5vw;
+    line-height: 1.25;
+  }
+
+  .hire__status a {
+    text-decoration: none;
+    color: #cb3f20;
   }
 
   .hire__status-indicator {
@@ -59,6 +65,10 @@
 
   .hire__status-indicator--available {
     color: #76FF03;
+  }
+
+  .hire__status-indicator--unavailable {
+    color: #FF6347;
   }
 
   .nav {
@@ -85,7 +95,7 @@
   }
 
   .u__underlined {
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
 
   .u__underlined-on-hover:hover {
@@ -122,7 +132,9 @@
     </section>
     <section class="greeting__large-text">
       <p>
-        You can find more from <a class="u__underlined-on-hover u__hover-to-cb3f20" href="https://github.com/b4fun">GitHub</a>,
+        You can find more from
+        <a class="u__underlined u__hover-to-cb3f20" href="https://github.com/b4fun">GitHub</a>,
+        <a class="u__underlined u__hover-to-cb3f20" href="https://patreon.com/artofhbc">Patreon</a>
       </p>
       <p>
         or ping me at</span> <a class="u__underlined-on-hover u__hover-to-cb3f20" href="mailto:hi@build4.fun">hi@build4.fun</a>.
@@ -132,20 +144,16 @@
   <article class="hire">
     <section class="hire__status">
       <p>
-        <span class="hire__status-indicator hire__status-indicator--available">●</span>
-        available for hire
+        <span class="hire__status-indicator hire__status-indicator--unavailable">●</span>
+        Sorry, I am unavailable for hire right now,
+      </p>
+      <p>
+        <span class="hire__status-indicator">&nbsp;&nbsp;</span>
+        but I am open for <a class="u__underlined-on-hover u__hover-to-cb3f20" href="mailto:hi@build4.fun">consultant work</a>.
       </p>
     </section>
   </article>
   <nav class="nav">
-    <span class="nav__info u__underlined">ongoing projects:</span>
-    <a class="nav__link" href="https://github.com/b4fun/pp" title="Coming soon...">
-      pp - a crawler service
-    </a>
-    <span class="nav__sep">/</span>
-    <a class="nav__link nav__link--disabled" href="#" title="Coming soon...">
-      m - 微信小程序懒人开发包
-    </a>
   </nav>
 </body>
 </html>
